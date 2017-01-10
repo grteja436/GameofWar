@@ -26,12 +26,6 @@ public class GameOfWar {
                 
         
     }
-    
-    
-    public static void nothingMethod()
-    {
-        if (1 < 2)
-            return;
-    }
+
     
 }

@@ -75,9 +75,5 @@ public class DeckOfCards {
         
         return deckAsString;
     }
-    
-    public void anotherSillyMethod()
-    {
-        return;
-    }
+
 }

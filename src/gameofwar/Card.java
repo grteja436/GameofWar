@@ -59,4 +59,9 @@ public class Card {
         return faceValue;
     }
     
+    public void sillyMethod()
+    {
+        System.out.print("Test");
+    }
+    
 }

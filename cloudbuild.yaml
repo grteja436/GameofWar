@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+         gsutil cp gs://shared-builderpreprod-bucket09750/sonarcloud/aaaontheway.json.enc .
+         gcloud kms decrypt --location global --keyring aaa-devops-keyring --key aaa-devops-cryptokey --ciphertext-file aaaontheway.json.enc --plaintext-file aaaontheway.json
+
+      
+         
+#logsBucket: 'gs://shared-builderpreprod-bucket01/buildlogs/devops'
